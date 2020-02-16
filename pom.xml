@@ -49,38 +49,13 @@
         <version>7.3.0</version>
     </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.knowm.xchange</groupId>-->
-<!--            <artifactId>xchange-core</artifactId>-->
-<!--            <version>4.4.1</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.knowm.xchange</groupId>-->
-<!--            <artifactId>xchange-examples</artifactId>-->
-<!--            <version>4.4.1</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.knowm.xchange</groupId>-->
-<!--            <artifactId>xchange-binance</artifactId>-->
-<!--            <version>4.4.1</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.knowm.xchange</groupId>-->
-<!--            <artifactId>xchange-poloniex</artifactId>-->
-<!--            <version>4.4.1</version>-->
-<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <optional>true</optional>
+        </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.knowm.xchange</groupId>-->
-<!--            <artifactId>xchange-hitbtc</artifactId>-->
-<!--            <version>4.4.1</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>org.knowm.xchange</groupId>-->
-<!--            <artifactId>xchange-examples</artifactId>-->
-<!--            <version>4.4.1</version>-->
-<!--        </dependency>-->
     </dependencies>
 
     <properties>
