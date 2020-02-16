@@ -91,4 +91,15 @@ public class Application {
 			}
 		}
 	}
+
+	public static String[] asd (String[] qwe) {
+		String[] returnVal = new String[20];
+		int a = 1;
+		if (a == 1) {
+			returnVal = qwe;
+			a++;
+		}
+		return returnVal;
+	}
+
 }

@@ -30,6 +30,8 @@ public class GreetingController {
         List<String> PoloniexXRP;
         List<String> HitbtcXRP;
 
+
+
         String b = "qwer";
 
         BinanceBTC = Arrays.asList(b);
@@ -69,3 +71,6 @@ public class GreetingController {
         return "index";
     }
 }
+
+
+
