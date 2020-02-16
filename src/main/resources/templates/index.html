@@ -139,36 +139,36 @@
             <th><h1>Hitbtc</h1></th>
         </tr>
         </thead>
-        </tbody>
+        <tbody>
         <tr>
             <td>BTC/USD</td>
-            <td>String BinanceBTC = price[1]</td>
-            <td>2</td>
-            <td>3</td>
+            <td th:each="BinanceBTC : ${BinanceBTC}" th:text="${BinanceBTC}"></td>
+            <td th:each="PoloniexBTC : ${PoloniexBTC}" th:text="${PoloniexBTC}"></td>
+            <td th:each="HitbtcBTC : ${HitbtcBTC}" th:text="${HitbtcBTC}"></td>
         </tr>
         <tr>
             <td>ETH/USD</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td th:each="BinanceETH : ${BinanceETH}" th:text="${BinanceETH}"></td>
+            <td th:each="PoloniexETH : ${PoloniexETH}" th:text="${PoloniexETH}"></td>
+            <td th:each="HitbtcETH : ${HitbtcETH}" th:text="${HitbtcETH}"></td>
         </tr>
         <tr>
             <td>ZEC/USD</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td th:each="BinanceZEC : ${BinanceZEC}" th:text="${BinanceZEC}"></td>
+            <td th:each="PoloniexZEC : ${PoloniexZEC}" th:text="${PoloniexZEC}"></td>
+            <td th:each="HitbtcZEC : ${HitbtcZEC}" th:text="${HitbtcZEC}"></td>
         </tr>
         <tr>
             <td>ATOM/USD</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td th:each="BinanceATOM : ${BinanceATOM}" th:text="${BinanceATOM}"></td>
+            <td th:each="PoloniexATOM : ${PoloniexATOM}" th:text="${PoloniexATOM}"></td>
+            <td th:each="HitbtcATOM : ${HitbtcATOM}" th:text="${HitbtcATOM}"></td>
         </tr>
         <tr>
             <td>XRP/USD</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td th:each="BinanceXRP : ${BinanceXRP}" th:text="${BinanceXRP}"></td>
+            <td th:each="PoloniexXRP : ${PoloniexXRP}" th:text="${PoloniexXRP}"></td>
+            <td th:each="HitbtcXRP : ${HitbtcXRP}" th:text="${HitbtcXRP}"></td>
         </tr>
         </tbody>
     </table>
