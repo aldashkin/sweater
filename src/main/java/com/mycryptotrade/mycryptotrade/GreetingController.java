@@ -30,11 +30,11 @@ public class GreetingController {
         List<String> PoloniexXRP;
         List<String> HitbtcXRP;
 
-
-
+        String[] qqq = new String[20];
+        qqq = Application.asd(qqq);
         String b = "qwer";
 
-        BinanceBTC = Arrays.asList(b);
+        BinanceBTC = Arrays.asList(qqq[1]);
         PoloniexBTC = Arrays.asList(b);
         HitbtcBTC = Arrays.asList(b);
         BinanceETH = Arrays.asList(b);;
@@ -71,6 +71,3 @@ public class GreetingController {
         return "index";
     }
 }
-
-
-

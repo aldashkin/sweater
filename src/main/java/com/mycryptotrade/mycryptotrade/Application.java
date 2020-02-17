@@ -82,7 +82,7 @@ public class Application {
 			String PoloniexXRP = price[18];
 			String HitbtcXRP = price[19];
 
-
+			Application.asd(price);
 
 			try {
 				Thread.sleep(60000);
@@ -101,5 +101,4 @@ public class Application {
 		}
 		return returnVal;
 	}
-
 }
