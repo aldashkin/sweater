@@ -7,11 +7,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class GreetingController {
+
+
     @GetMapping("/index")
     public String index(Model model) {
+
+        String[] gennadii = new String[20];
 
         List<String> BinanceBTC;
         List<String> PoloniexBTC;
@@ -29,11 +34,12 @@ public class GreetingController {
         List<String> PoloniexXRP;
         List<String> HitbtcXRP;
 
-        String[] qqq = new String[20];
-        qqq = Application.asd(qqq);
         String b = "qwer";
 
-        BinanceBTC = Arrays.asList(qqq[1]);
+        Application qqq = new Application();
+        gennadii = qqq.getValues();
+
+        BinanceBTC = Arrays.asList(gennadii[1]);
         PoloniexBTC = Arrays.asList(b);
         HitbtcBTC = Arrays.asList(b);
         BinanceETH = Arrays.asList(b);;
