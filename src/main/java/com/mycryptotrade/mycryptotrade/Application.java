@@ -48,11 +48,10 @@ public class Application {
 
 			while (cellIterator.hasNext()) {
 				Cell cell = cellIterator.next();
-				System.out.println(cell.toString() + ";");
 				if ((String) cell.toString() != null)
 					text.append((String) cell.toString());
 			}
-			System.out.println();
+
 		}
 		workbook.close();
 		fis.close();
