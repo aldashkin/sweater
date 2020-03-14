@@ -1,40 +1,34 @@
 package com.mycryptotrade.mycryptotrade;
 
-
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.servlet.ModelAndView;
-
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @SpringBootApplication
 public class Application {
 
-	String[] price = new String[20];
+	static String[] price = new String[20];
 
 	public static void main(String[] args) throws IOException {
-
+		while (true) {
 			SpringApplication.run(Application.class, args);
 			Application app = new Application();
 			app.price();
-
+			try {
+				Thread.sleep(60000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	public String[] price () throws IOException {
@@ -76,27 +70,6 @@ public class Application {
 				break;
 
 		}
-
-		/**String BinanceBTC = price[1];
-		String PoloniexBTC = price[2];
-		String HitbtcBTC = price[3];
-		String BinanceETH = price[5];
-		String PoloniexETH = price[6];
-		String HitbtcETH = price[7];
-		String BinanceZEC = price[9];
-		String PoloniexZEC = price[10];
-		String HitbtcZEC = price[11];
-		String BinanceATOM = price[13];
-		String PoloniexATOM = price[14];
-		String HitbtcATOM = price[15];
-		String BinanceXRP = price[17];
-		String PoloniexXRP = price[18];
-		String HitbtcXRP = price[19];*/
-
-
-		/**try {
-			Thread.sleep(60000);
-		} catch (InterruptedException e) { }*/
 
 		return price;
 	}

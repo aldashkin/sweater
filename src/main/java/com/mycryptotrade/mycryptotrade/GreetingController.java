@@ -3,58 +3,51 @@ package com.mycryptotrade.mycryptotrade;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 public class GreetingController {
 
-
     @GetMapping("/index")
     public String index(Model model) {
 
-        String[] gennadii = new String[20];
+        Application app = new Application();
 
-        List<String> BinanceBTC;
-        List<String> PoloniexBTC;
-        List<String> HitbtcBTC;
-        List<String> BinanceETH;
-        List<String> PoloniexETH;
-        List<String> HitbtcETH;
-        List<String> BinanceZEC;
-        List<String> PoloniexZEC;
-        List<String> HitbtcZEC;
-        List<String> BinanceATOM;
-        List<String> PoloniexATOM;
-        List<String> HitbtcATOM;
-        List<String> BinanceXRP;
-        List<String> PoloniexXRP;
-        List<String> HitbtcXRP;
+        String BinanceBTC;
+        String PoloniexBTC;
+        String HitbtcBTC;
+        String BinanceETH;
+        String PoloniexETH;
+        String HitbtcETH;
+        String BinanceZEC;
+        String PoloniexZEC;
+        String HitbtcZEC;
+        String BinanceATOM;
+        String PoloniexATOM;
+        String HitbtcATOM;
+        String BinanceXRP;
+        String PoloniexXRP;
+        String HitbtcXRP;
 
-        String b = "qwer";
+        List<String> values;
+        Collect collect = new Collect();
+        values = collect.getValue();
 
-        Application qqq = new Application();
-        gennadii = qqq.getValues();
-
-        BinanceBTC = Arrays.asList(gennadii[1]);
-        PoloniexBTC = Arrays.asList(b);
-        HitbtcBTC = Arrays.asList(b);
-        BinanceETH = Arrays.asList(b);;
-        PoloniexETH = Arrays.asList(b);
-        HitbtcETH = Arrays.asList(b);
-        BinanceZEC = Arrays.asList(b);
-        PoloniexZEC = Arrays.asList(b);
-        HitbtcZEC = Arrays.asList(b);
-        BinanceATOM = Arrays.asList(b);
-        PoloniexATOM = Arrays.asList(b);
-        HitbtcATOM = Arrays.asList(b);
-        BinanceXRP = Arrays.asList(b);
-        PoloniexXRP = Arrays.asList(b);
-        HitbtcXRP = Arrays.asList(b);
-
+        BinanceBTC = values.get(1);
+        PoloniexBTC = values.get(2);
+        HitbtcBTC = values.get(3);
+        BinanceETH = values.get(5);
+        PoloniexETH = values.get(6);
+        HitbtcETH = values.get(7);
+        BinanceZEC = values.get(9);
+        PoloniexZEC = values.get(10);
+        HitbtcZEC = values.get(11);
+        BinanceATOM = values.get(13);
+        PoloniexATOM = values.get(14);
+        HitbtcATOM = values.get(15);
+        BinanceXRP = values.get(17);
+        PoloniexXRP = values.get(18);
+       HitbtcXRP = values.get(19);
 
         model.addAttribute("BinanceBTC", BinanceBTC);
         model.addAttribute("PoloniexBTC", PoloniexBTC);
@@ -71,7 +64,6 @@ public class GreetingController {
         model.addAttribute("BinanceXRP", BinanceXRP);
         model.addAttribute("PoloniexXRP", PoloniexXRP);
         model.addAttribute("HitbtcXRP", HitbtcXRP);
-
 
         return "index";
     }
